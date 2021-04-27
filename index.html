@@ -12,9 +12,15 @@
 </head>
 <body>
 
-    <div class="container weatherApp text-center rounded-circle">
+    <div class="container weatherApp">
         <form class="searchbar">
             <div>
+                <button 
+                type="submit" 
+                class="btn btn-transparant pintpoint" 
+                id="pintpoint">
+                    📍
+                </button>
                 <input 
                 type="text" 
                 class="searchbar" 
@@ -28,29 +34,20 @@
                 id="search-button">
                     👁
                 </button>
-                <div 
-                class="pintpoint" 
-                id="pintpoint">
-                <button 
-                type="submit" 
-                class="btn btn-transparant">
-                    📍
-                </button>
-                </div>
             </div>
         </form>
-        <span class="today">
+        <div class="today">
             <div 
             class="date" 
             id="date">
                 Tue 27 April
             </div>
-            <span 
+            <div 
             class="time" 
             id="time">
                 17:35
-            </span>
-        </span>
+        </div>
+        </div>
     <h1 
     class="city" 
     id="city">

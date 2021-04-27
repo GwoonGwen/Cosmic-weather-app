@@ -1,7 +1,45 @@
 body {
+	align-items: center;
+	background-attachment: fixed;
+	display: flex;
 	font-family: "Open Sans", sans-serif;
+	height: 100%;
+	justify-content: center;
 }
 
 .weatherApp {
 	border: thick double #4ebfd9;
+
+	margin: 30px auto;
+	max-height: 500px;
+	max-width: 500px;
+	min-height: 500px;
+	min-width: 500px;
+	padding: 50px auto;
+	text-align: center;
+}
+
+.pintpoint {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.searchbar {
+	margin-top: 10px;
+	margin-right: 0;
+}
+
+.searchButton {
+	margin-left: 0 auto;
+	padding: 0 auto;
+}
+
+.today {
+	margin-top: 20px 20px auto;
+}
+
+.cityDetails {
+	font-size: 14px;
+	list-style: none;
+	line-height: 1.2;
 }
