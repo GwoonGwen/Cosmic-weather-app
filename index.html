@@ -11,6 +11,25 @@
 <body>
 
     <div class="container weatherApp">
+        <form class="searchbar">
+            <div class="searchButton" id="search-button">
+            <button 
+                type="submit"
+                class="btn btn-transparant"
+                id="submit-city">
+                👁
+            </button>
+            </div>
+            <div>
+                <input 
+                type="search" 
+                class="searchbar" 
+                Id="search-bar" 
+                placeholder="Search city.." 
+                autofocus="on"
+                autocomplete="off">
+            </div>
+        </form>
         <span class="today">
             <div class="date" id="date">
                 Tue 27 April
@@ -20,9 +39,23 @@
             </span>
         </span>
     <h1 class="city" id="city">
-        Amsterdam
+        City
     </h1>
-
+    <h2 class="temperatureToday" id="temperature-today">
+    <span class="emoToday" id="emo-today">🌤</span> 15<span class="celsius">ºC</span>|<span class="fahrenheit">ºF</span>
+    </h2>
+    <ul class="cityDetails">
+        <li class="humidity">
+            humidity:
+            <span class="humidityValue">53%</span>
+        </li>
+        <li class="wind">
+            wind:
+            <span class="wind">4km/h</span>
+        </li>
+        <li class="sky">
+        </li>
+    </ul>
     <script src="src/app.js"></script>
 </div>
 </body>
