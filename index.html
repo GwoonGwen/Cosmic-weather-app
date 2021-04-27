@@ -12,51 +12,103 @@
 
     <div class="container weatherApp">
         <form class="searchbar">
-            <div class="searchButton" id="search-button">
-            <button 
-                type="submit"
-                class="btn btn-transparant"
-                id="submit-city">
-                👁
-            </button>
-            </div>
             <div>
                 <input 
-                type="search" 
+                type="text" 
                 class="searchbar" 
                 Id="search-bar" 
                 placeholder="Search city.." 
                 autofocus="on"
                 autocomplete="off">
+                <button 
+                type="submit" 
+                class="btn btn-transparant searchButton" 
+                id="search-button">
+                    👁
+                </button>
+                <div 
+                class="pintpoint" 
+                id="pintpoint">
+                <button 
+                type="submit" 
+                class="btn btn-transparant">
+                    📍
+                </button>
+                </div>
             </div>
         </form>
         <span class="today">
-            <div class="date" id="date">
+            <div 
+            class="date" 
+            id="date">
                 Tue 27 April
             </div>
-            <span class="time" id="time">
+            <span 
+            class="time" 
+            id="time">
                 17:35
             </span>
         </span>
-    <h1 class="city" id="city">
+    <h1 
+    class="city" 
+    id="city">
         City
     </h1>
-    <h2 class="temperatureToday" id="temperature-today">
-    <span class="emoToday" id="emo-today">🌤</span> 15<span class="celsius">ºC</span>|<span class="fahrenheit">ºF</span>
+    <h2 
+    class="temperatureToday" 
+    id="temperature-today">
+    <span 
+    class="emoToday" 
+    id="emo-today">
+    🌤
+    </span> 
+    15
+    <a 
+    href="#" 
+    class="celsius">
+    ºC
+    </a>
+     |
+    <a 
+    href="#" 
+    class="fahrenheit">
+    ºF
+    </a>
     </h2>
-    <ul class="cityDetails">
-        <li class="humidity">
+    <ul 
+    class="cityDetails">
+        <li 
+        class="humidity">
             humidity:
-            <span class="humidityValue">53%</span>
+            <span 
+            class="humidityValue">
+            53%
+            </span>
         </li>
-        <li class="wind">
+        <li 
+        class="wind">
             wind:
-            <span class="wind">4km/h</span>
+            <span 
+            class="wind">
+            4km/h
+            </span>
         </li>
-        <li class="sky">
+        <li 
+        class="sky">
         </li>
     </ul>
-    <script src="src/app.js"></script>
+        <footer 
+        class="myInfo">
+            open source code
+            <br/>
+            <a 
+            class="meLink" 
+            href="https://github.com/GwoonGwen">
+            GwoonGwen
+            </a>
+        </footer>
+    <script 
+    src="src/app.js"></script>
 </div>
 </body>
 </html>
