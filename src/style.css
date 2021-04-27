@@ -1,1 +1,7 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
 
+.weatherApp {
+	border: thick double #4ebfd9;
+}
