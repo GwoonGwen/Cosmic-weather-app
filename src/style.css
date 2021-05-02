@@ -4,7 +4,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top;
-	background-image: url(http://bit.ly/2gPLxZ4);
+	background-image: url(https://cssanimation.rocks/images/random/space2.jpg);
 	width: 100%;
 	height: 100%;
 	font-family: "Open Sans", sans-serif;
@@ -17,7 +17,6 @@ a {
 	color: rgb(9, 31, 229);
 	text-decoration: none;
 }
-
 .weatherApp {
 	display: center;
 	border-radius: 60%;
@@ -31,12 +30,10 @@ a {
 	min-width: 500px;
 	text-align: center;
 }
-
 .pinpoint {
 	font-size: 20px;
 	margin: 1px auto;
 }
-
 .searchbar {
 	border: thin;
 	border-radius: 200px;
@@ -46,14 +43,12 @@ a {
 	text-align: center;
 	width: 160px;
 }
-
 .searchButton {
 	font-size: 30px;
 	margin-top: 1px;
 	margin-bottom: 5px;
 	line-height: 1;
 }
-
 .today {
 	border-radius: 100px;
 	backdrop-filter: blur(7px);
@@ -63,20 +58,17 @@ a {
 	max-width: 30%;
 	margin: 10px auto;
 }
-
 .date {
 	color: rgb(255, 255, 255);
 	font-size: 18px;
 	line-height: 1.2;
 	margin-top: 10px;
 }
-
 .time {
 	color: rgb(237, 141, 141);
 	font-size: 17px;
 	line-height: 1.2;
 }
-
 .city {
 	border-radius: 50px;
 	backdrop-filter: blur(7px);
@@ -92,7 +84,6 @@ a {
 	text-transform: capitalize;
 	width: 350px;
 }
-
 .temperatureToday {
 	border-radius: 50px;
 	backdrop-filter: blur(7px);
@@ -104,14 +95,12 @@ a {
 	max-height: 100%;
 	max-width: 30%;
 }
-
 .TempDetail {
 	color: rgb(9, 31, 229);
 	font-size: 12px;
 	position: relative;
 	bottom: 15px;
 }
-
 .cityDetails {
 	border-radius: 50px;
 	backdrop-filter: blur(7px);
@@ -125,13 +114,11 @@ a {
 	max-width: 30%;
 	padding-right: 20px;
 }
-
 .myInfo {
 	color: rgb(251, 249, 249);
 	font-size: 60%;
-	margin: 10px auto;
+	margin: 30px auto;
 }
-
 .meLink {
 	color: rgb(39, 147, 209);
 	font-family: monospace;
