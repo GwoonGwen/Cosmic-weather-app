@@ -8,38 +8,56 @@ body {
 }
 
 .weatherApp {
-	border: thick double #4ebfd9;
-
-	margin: 30px auto;
-	max-height: 500px;
-	max-width: 500px;
-	min-height: 500px;
-	min-width: 500px;
-	padding: 50px auto;
+	border: thick double #5b87ff;
+	border-radius: 100%;
+	margin: 30px 10px auto;
+	max-height: 400px;
+	max-width: 400px;
+	min-height: 400px;
+	min-width: 400px;
+	padding: 10px auto;
 	text-align: center;
-}
-
-.pintpoint {
-	margin: 0 auto;
-	padding: 0 auto;
-}
-
-.searchbar {
-	margin-top: 10px;
-	margin-right: 0;
-}
-
-.searchButton {
-	margin-left: 0 auto;
-	padding: 0 auto;
 }
 
 .today {
 	margin-top: 20px 20px auto;
 }
 
+.city {
+	color: blue;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-shadow: 4px 4px 5px grey;
+}
+
+.temperatureToday {
+	font-size: 30px;
+}
+
+.TempDetail {
+	font-size: 10px;
+	text-decoration: none;
+	position: relative;
+	bottom: 10px;
+}
+
 .cityDetails {
-	font-size: 14px;
+	font-size: 13px;
 	list-style: none;
 	line-height: 1.2;
+}
+
+.myInfo {
+	font-size: 70%;
+	position: relative;
+	top: 14px;
+}
+
+.meLink {
+	font-family: monospace;
+	font-size: 80%;
+	text-decoration: none;
+	position: relative;
+	bottom: 0px;
 }
