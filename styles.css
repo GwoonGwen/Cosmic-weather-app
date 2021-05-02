@@ -1,0 +1,173 @@
+body {
+	align-items: center;
+	background-image: linear-gradient(
+		to top,
+		#fcc5e4 0%,
+		#fda34b 15%,
+		#ff7882 35%,
+		#c8699e 52%,
+		#7046aa 71%,
+		#0c1db8 87%,
+		#020f75 100%
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	font-family: "Poppins", sans-serif;
+	height: 100%;
+	justify-content: center;
+}
+
+.me a {
+	color: #060f8c;
+	text-decoration: none;
+}
+
+.units a {
+	text-decoration: none;
+}
+
+.units {
+	vertical-align: super;
+	font-size: 12px;
+	position: relative;
+	left: -2px;
+	top: -4px;
+}
+
+.pinpoint {
+	position: relative;
+	right: 25px;
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.weatherApp {
+	align-items: center;
+	background-color: #eec9dbe7;
+	display: flex;
+	justify-content: center;
+	margin: 50px auto;
+	padding: 10px;
+}
+
+.searchbar {
+	display: inline-block;
+	margin-left: 25px;
+	margin-bottom: 0;
+}
+
+.btn {
+	cursor: grab;
+	font-size: 30px;
+	margin-left: 45px;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0px auto;
+	line-height: 1;
+}
+
+.form-control {
+	height: 50%;
+	font-size: 15px;
+}
+
+.datetime {
+	margin: 30px auto;
+}
+
+.dateToday {
+	color: #552894;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.timeToday {
+	color: rgba(75, 70, 70, 0.865);
+	font-size: 15px;
+}
+
+.cityMain {
+	margin: 30px 100px 20px 100px;
+}
+
+.city {
+	color: #0c1db8;
+	font-size: 45px;
+	font-weight: 900;
+	line-height: 1;
+	margin: 0 auto;
+}
+
+.temperatureDayCity {
+	color: #7046aa;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 1;
+	text-align: right;
+	margin-right: 1px;
+}
+
+#temp-day-main {
+	position: relative;
+	top: 8px;
+	right: -9px;
+}
+
+.extraInfo {
+	margin-left: 27px;
+}
+
+.detailsDayCity {
+	color: rgba(75, 70, 70, 0.865);
+	font-size: 12px;
+	list-style: none;
+	position: relative;
+	top: -2px;
+	left: 6px;
+	text-align: left;
+	line-height: 1;
+}
+
+.view {
+	color: #fff;
+	text-decoration-thickness: 10;
+}
+
+.forecast {
+	margin-left: 110px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	line-height: 1.5;
+}
+
+.forecastDay {
+	color: #0c1db8;
+	font-size: 23px;
+	font-weight: 900;
+}
+
+.emoticon {
+	font-size: 45px;
+}
+
+.temperature {
+	color: #eb51a6;
+	font-size: 23px;
+}
+
+.temperatureNight {
+	color: rgba(75, 70, 70, 0.865);
+	font-size: 18px;
+	line-height: 2;
+}
+
+.open {
+	color: rgba(75, 70, 70, 0.865);
+	font-family: monospace;
+	font-size: 13px;
+	line-height: 1;
+	margin-top: 78px;
+	margin-bottom: 5px;
+}

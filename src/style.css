@@ -1,5 +1,6 @@
 body {
 	align-items: center;
+	background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 	background-attachment: fixed;
 	display: flex;
 	font-family: "Open Sans", sans-serif;
@@ -9,43 +10,56 @@ body {
 
 a {
 	text-decoration: none;
+	color: rgb(67, 194, 236);
+}
+
+button {
 }
 
 .weatherApp {
-	border: thick double #5b87ff;
-	border-radius: 100%;
-	box-shadow: 8px 1px 10px silver;
-	margin: 30px 10px auto;
-	max-height: 400px;
-	max-width: 400px;
-	min-height: 400px;
-	min-width: 400px;
+	display: center;
+	border-radius: 50%;
+	background: center / contain no-repeat
+		url(https://cssanimation.rocks/images/random/earth.png);
+	box-shadow: 2px 1px 20px rgb(233, 184, 48);
+	margin: 50px auto;
+	max-height: 450px;
+	max-width: 450px;
+	min-height: 450px;
+	min-width: 450px;
 	padding: 10px auto;
 	text-align: center;
 }
 
 .searchbar {
 	border: thin;
+	border-radius: 200px;
+	font-size: 19px;
 	text-align: center;
-	font-size: 15px;
 }
 
 .today {
-	color: rgb(51, 44, 52);
-	margin-top: 20px 20px auto;
+	background-color: rgba(246, 241, 154, 0.473);
+	border-radius: 200px;
+	color: rgb(5, 2, 78);
+	font-weight: 600px;
+	margin-top: 40px auto;
+	max-width: 100px;
+	position: relative;
+	left: 165px;
 }
 
 .date {
-	font-size: 12px;
+	font-size: 15px;
 	margin-top: 10px;
 }
 
 .time {
-	font-size: 11px;
+	font-size: 14px;
 }
 
 .city {
-	color: #0d6efd;
+	color: #ffff;
 	font-size: 40px;
 	font-weight: bold;
 	text-transform: capitalize;
@@ -53,12 +67,13 @@ a {
 }
 
 .temperatureToday {
-	color: rgb(51, 44, 52);
+	color: rgb(39, 1, 44);
 	font-size: 30px;
 	text-shadow: 4px 2px 5px grey;
 }
 
 .TempDetail {
+	color: rgb(67, 194, 236);
 	font-size: 12px;
 	position: relative;
 	bottom: 15px;
@@ -66,22 +81,25 @@ a {
 }
 
 .cityDetails {
-	color: grey;
+	color: #170852;
 	font-size: 12px;
 	list-style: none;
 	line-height: 1.2;
 	text-shadow: 4px 2px 5px silver;
+	position: relative;
+	right: 10px;
 }
 
 .myInfo {
-	font-size: 70%;
+	font-size: 60%;
 	position: relative;
-	top: 14px;
+	top: 25px;
 }
 
 .meLink {
+	color: #341f73;
 	font-family: monospace;
-	font-size: 80%;
+	font-size: 90%;
 	text-decoration: none;
 	position: relative;
 	bottom: 0px;
