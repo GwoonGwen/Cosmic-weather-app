@@ -38,16 +38,16 @@ function currentTime(time) {
 
 function cityInputWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
-    document.querySelector("#humidity").innerHTML = Math.round(response.date.main.humidity);
-    document.querySelector("#wind").innerHTML = Math.round(response.date.wind.speed);
+    document.querySelector("#humidity-value").innerHTML = Math.round(response.data.main.humidity);
+    document.querySelector("#km").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#sky").innerHTML = response.data.weather[0].description;
-    document.querySelector("#temp-main").innerHTML = Math.round(response.date.main.temp);
+    document.querySelector("#temp-main").innerHTML = Math.round(response.data.main.temp);
 }
 
 function cityUserInput(event) {
     event.preventDefault();
-    let cityInput = document.querySelector("#search-bar").nodeValue.trim();
-    let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
+    let cityInput = document.querySelector("#search-bar").value.trim();
+    let apiKey = "bea03abc048987ac9ed7fb290ead5af5";
     let units = "metric";
     let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
     let apiUrl = `${mainUrl}q=${cityInput}&appid=${apiKey}&units=${units}`;
@@ -59,8 +59,8 @@ let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
 
-let cityInput = document.querySelector("#search-bar");
+let cityInput = document.querySelector("#user-input");
 cityInput.addEventListener("submit", cityUserInput);
 
-let pinpoint = document.querySelector("#pinpoint");
-pinpoint.addEventListener("click", pinpointCity);
+//let pinpoint = document.querySelector("#pinpoint");
+//pinpoint.addEventListener("click", pinpointCity);
