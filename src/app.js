@@ -38,7 +38,10 @@ function currentTime(time) {
 
 function cityInputWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
-    document.querySelector("")
+    document.querySelector("#humidity").innerHTML = Math.round(response.date.main.humidity);
+    document.querySelector("#wind").innerHTML = Math.round(response.date.main.humidity);
+    document.querySelector("#sky").innerHTML = Math.round(response.date.main.humidity);
+    document.querySelector("#humidity").innerHTML = Math.round(response.date.main.humidity);
 }
 
 function cityUserInput(event) {
