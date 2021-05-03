@@ -42,13 +42,14 @@ a:hover {
 	margin: 1px auto;
 }
 .searchbar {
+	background-color: lightyellow;
 	border: thin;
 	border-radius: 200px;
-	display: inline-block;
 	height: 20px;
-	margin: 10px auto;
+	margin-bottom: 25px;
+	margin-top: 30px;
 	text-align: center;
-	width: 160px;
+	width: 120px;
 }
 .searchButton {
 	font-size: 30px;
@@ -83,7 +84,8 @@ a:hover {
 	backdrop-filter: blur(1px);
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(2, 2, 53);
-	text-shadow: 1px 1px 2px gold, 0 0 1em blue, 0 0 0.2em blue;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
 	font-size: 50px;
 	line-height: 0.5;
 	max-height: 100%;
@@ -95,10 +97,11 @@ a:hover {
 }
 .temperatureToday {
 	border-radius: 50px;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(1px);
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(2, 2, 53);
-	text-shadow: 1px 1px 2px rgb(251, 236, 152), 0 0 1em blue, 0 0 0.2em blue;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
 	font-size: 35px;
 	line-height: 1;
 	margin: 10px auto;
@@ -113,7 +116,7 @@ a:hover {
 }
 .cityDetails {
 	border-radius: 50px;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(1px);
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
