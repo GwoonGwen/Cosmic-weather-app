@@ -39,18 +39,19 @@ function currentTime(time) {
 function cityInputWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#humidity").innerHTML = Math.round(response.date.main.humidity);
-    document.querySelector("#wind").innerHTML = Math.round(response.date.main.humidity);
-    document.querySelector("#sky").innerHTML = Math.round(response.date.main.humidity);
-    document.querySelector("#humidity").innerHTML = Math.round(response.date.main.humidity);
+    document.querySelector("#wind").innerHTML = Math.round(response.date.wind.speed);
+    document.querySelector("#sky").innerHTML = response.data.weather[0].description;
+    document.querySelector("#temp-main").innerHTML = Math.round(response.date.main.temp);
 }
 
 function cityUserInput(event) {
     event.preventDefault();
     let cityInput = document.querySelector("#search-bar").nodeValue.trim();
-    let apikey = "b6ea7199b1cb9aca54197fcbaab59e85";
+    let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
     let units = "metric";
     let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
     let apiUrl = `${mainUrl}q=${cityInput}&appid=${apiKey}&units=${units}`;
+
     axios.get(apiUrl).then(cityInputWeather)
 }
 
