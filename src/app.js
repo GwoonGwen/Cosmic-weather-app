@@ -55,6 +55,22 @@ function cityUserInput(event) {
     axios.get(apiUrl).then(cityInputWeather)
 }
 
+function searchPosition(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiKey = "bea03abc048987ac9ed7fb290ead5af5";
+    let units = "metric";
+    let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
+    let apiUrl = `${mainUrl}lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+
+    axios.get(apiUrl).then(cityInputWeather)
+}
+
+function pintpointCity(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchPosition);
+}
+
 let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
@@ -62,5 +78,5 @@ let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
 let cityInput = document.querySelector("#user-input");
 cityInput.addEventListener("submit", cityUserInput);
 
-//let pinpoint = document.querySelector("#pinpoint");
-//pinpoint.addEventListener("click", pinpointCity);
+let pinpoint = document.querySelector("#pinpoint");
+pinpoint.addEventListener("click", pinpointCity);
