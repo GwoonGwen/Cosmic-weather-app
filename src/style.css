@@ -31,10 +31,12 @@ a {
 	min-width: 500px;
 	text-align: center;
 }
+
 .pinpoint {
 	font-size: 20px;
 	margin: 1px auto;
 }
+
 .searchbar {
 	background-color: lightyellow;
 	border: thin;
@@ -45,12 +47,14 @@ a {
 	text-align: center;
 	width: 120px;
 }
+
 .searchButton {
 	font-size: 30px;
 	margin-top: 1px;
 	margin-bottom: 5px;
 	line-height: 1;
 }
+
 .today {
 	border-radius: 100px;
 	backdrop-filter: blur(1px);
@@ -60,6 +64,7 @@ a {
 	max-width: 30%;
 	margin: 25px auto;
 }
+
 .date {
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
@@ -67,12 +72,14 @@ a {
 	line-height: 1.2;
 	margin-top: 10px;
 }
+
 .time {
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 	font-size: 15px;
 	line-height: 1.2;
 }
+
 .city {
 	border-radius: 50px;
 	backdrop-filter: blur(1px);
@@ -89,36 +96,58 @@ a {
 	text-transform: capitalize;
 	width: 350px;
 }
+
 .tempToday {
 	border-radius: 50px;
 	backdrop-filter: blur(1px);
-	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(2, 2, 53);
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
-	font-size: 35px;
 	line-height: 1;
-	margin: 10px auto;
+	margin: 1px auto;
 	max-height: 100%;
-	max-width: 30%;
-}
-.tempDetail {
-	color: rgb(130, 158, 241);
-	font-size: 12px;
 	position: relative;
+	right: 15px;
+}
+
+.tempMain {
+	font-size: 35px;
+}
+
+.iconToday {
+	backdrop-filter: blur(1px);
+	border-radius: 50px;
+	bottom: 10px;
+	left: 13px;
+	line-height: 1px;
+	max-width: 35%;
+	position: relative;
+}
+
+.tempDetail {
+	backdrop-filter: blur(1px);
 	bottom: 15px;
+	color: rgb(2, 2, 53);
+	font-size: 12px;
+	line-height: 1.2;
+	position: relative;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
 }
 
 .tempDetail .active {
-	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
+	backdrop-filter: blur(1px);
 	color: rgb(2, 2, 53);
 	cursor: default;
+	font-size: 12px;
+	line-height: 1.2;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
 }
 
 .cityDetails {
 	border-radius: 50px;
 	backdrop-filter: blur(1px);
-	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 	font-size: 14px;
@@ -129,12 +158,14 @@ a {
 	max-width: 30%;
 	padding-right: 20px;
 }
+
 .myInfo {
 	color: rgb(251, 249, 249);
 	font-size: 90%;
 	margin-top: 200px;
 	text-align: center;
 }
+
 .meLink {
 	color: rgb(254, 253, 149);
 	text-shadow: 1px 1px 2px rgb(212, 0, 255), 0 0 1em rgb(67, 229, 18),
