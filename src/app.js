@@ -66,7 +66,7 @@ function searchPosition(position) {
     axios.get(apiUrl).then(cityInputWeather)
 }
 
-function pintpointCity(event) {
+function pinpointCity(event) {
     event.preventDefault();
     navigator.geolocation.getCurrentPosition(searchPosition);
 }
