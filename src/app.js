@@ -42,6 +42,8 @@ function cityInputWeather(response) {
     document.querySelector("#km").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#sky").innerHTML = response.data.weather[0].description;
     document.querySelector("#temp-main").innerHTML = Math.round(response.data.main.temp);
+
+    celsiusTemp = response.data.main.temp;
 }
 
 function cityUserInput(event) {
@@ -51,8 +53,8 @@ function cityUserInput(event) {
     let units = "metric";
     let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
     let apiUrl = `${mainUrl}q=${cityInput}&appid=${apiKey}&units=${units}`;
-
     axios.get(apiUrl).then(cityInputWeather)
+
 }
 
 function searchPosition(position) {
@@ -71,6 +73,25 @@ function pinpointCity(event) {
     navigator.geolocation.getCurrentPosition(searchPosition);
 }
 
+function showFahrenheit(event) {
+    event.preventDefault();
+    let tempElement = document.querySelector("#temp-main");
+
+    celsiusLink.classList.remove("active");
+    fahnrenheitLink.classList.add("active");
+
+    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+    tempElement.innerHTML = Math.round (fahrenheitTemp);
+}
+
+function showCelsius(event) {
+    event.preventDefault();
+    celsiusLink.classList.add("active");
+    fahnrenheitLink.classList.remove("active");
+    let tempElement = document.querySelector("#temp-main");
+    tempElement.innerHTML = Math.round(celsiusTemp);
+}
+
 let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
@@ -80,3 +101,11 @@ cityInput.addEventListener("submit", cityUserInput);
 
 let pinpoint = document.querySelector("#pinpoint");
 pinpoint.addEventListener("click", pinpointCity);
+
+let celsiusTemp = null;
+
+let fahnrenheitLink = document.querySelector("#fahrenheit");
+fahnrenheitLink.addEventListener("click", showFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsius);

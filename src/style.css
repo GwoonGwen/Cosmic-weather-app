@@ -18,12 +18,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: rgb(247, 240, 99);
-	text-shadow: 1px 1px 2px rgb(8, 8, 8), 0 0 1em rgb(182, 178, 246),
-		0 0 0.2em rgb(250, 217, 244);
-}
-
 .weatherApp {
 	display: center;
 	border-radius: 60%;
@@ -114,6 +108,13 @@ a:hover {
 	position: relative;
 	bottom: 15px;
 }
+
+.tempDetail .active {
+	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
+	color: rgb(2, 2, 53);
+	cursor: default;
+}
+
 .cityDetails {
 	border-radius: 50px;
 	backdrop-filter: blur(1px);
@@ -140,4 +141,10 @@ a:hover {
 		0 0 0.2em blue;
 	font-family: monospace;
 	text-decoration: none;
+}
+
+.meLink:hover {
+	color: rgb(247, 240, 99);
+	text-shadow: 1px 1px 2px rgb(8, 8, 8), 0 0 1em rgb(182, 178, 246),
+		0 0 0.2em rgb(250, 217, 244);
 }
