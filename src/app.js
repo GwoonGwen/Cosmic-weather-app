@@ -86,8 +86,10 @@ function showFahrenheit(event) {
 
 function showCelsius(event) {
     event.preventDefault();
+
     celsiusLink.classList.add("active");
     fahnrenheitLink.classList.remove("active");
+
     let tempElement = document.querySelector("#temp-main");
     tempElement.innerHTML = Math.round(celsiusTemp);
 }
@@ -96,11 +98,11 @@ let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
 
-let cityInput = document.querySelector("#user-input");
-cityInput.addEventListener("submit", cityUserInput);
-
 let pinpoint = document.querySelector("#pinpoint");
 pinpoint.addEventListener("click", pinpointCity);
+
+let cityInput = document.querySelector("#user-input");
+cityInput.addEventListener("submit", cityUserInput);
 
 let celsiusTemp = null;
 
@@ -109,3 +111,5 @@ fahnrenheitLink.addEventListener("click", showFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsius);
+
+navigator.geolocation.getCurrentPosition(searchPosition);
