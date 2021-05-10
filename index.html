@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
-
     <div class="container weatherApp">
         <form 
         class="userInput"
@@ -48,67 +47,95 @@
             class="time" 
             id="time"></div>
         </div>
-    <h1 
-    class="city" 
-    id="city">Amsterdamio</h1>
-    <h2 
-    class="tempToday">
-    <img 
-    src=""
-    alt=""
-    class="iconToday " 
-    id="icon-today"> 
-    <span
-    class="tempMain"
-    id="temp-main">99</span>
-    <span
-    class="tempDetail">
-    <a 
-    href="#"
-    class="active"
-    id="celsius">
-    ºC
-    </a>|
-    <a 
-    href="#"
-    class=""
-    id="fahrenheit">ºF
-    </a>
-    </span>
-    </h2>
-    <ul 
-    class="cityDetails mt-0">
-        <li 
-        class="humidity">
+        <h1
+        class="city"
+        id="city">Amsterdamio</h1>
+        <h2
+        class="tempToday">
+        <img
+        src=""
+        alt=""
+        width="70"
+        class="iconToday"
+        id="icon-today">
+        <span
+        class="tempMain"
+        id="temp-main">99</span>
+        <span
+        class="tempDetail">
+        <a 
+        href="#"
+        class="active"
+        id="celsius">
+        ºC
+        </a>|
+        <a 
+        href="#"
+        class=""
+        id="fahrenheit">ºF
+        </a>
+        </span>
+        </h2>
+        <ul 
+        class="cityDetails mt-0">
+            <li 
+            class="humidity">
             humidity:
             <span 
             class="humidityValue"
             id="humidity-value">99</span>%
-        </li>
-        <li 
-        class="wind"
-        id="wind">
+            </li>
+            <li 
+            class="wind"
+            id="wind">
             wind:
             <span 
             class="km"
             id="km">9</span>km/h
-        </li>
-        <li 
-        class="sky"
-        id="sky"></li>
-    </ul>
-</div>
-<footer 
-class="myInfo">
+            </li>
+            <li 
+            class="sky"
+            id="sky"></li>
+        </ul>
+        <div class="forecast">
+            <div class="row">
+                <div class="col-2">
+                    <div class="forecastDay1">
+                    Tue
+                    </div>
+                    <img class="forecasteEmo1"
+                    src="http://openweathermap.org/img/wn/04d@2x.png"
+                    alt=""
+                    width="60"
+                    />
+                    <div 
+                    class="forecastTemp" 
+                    id="forecast-temp">
+                    <span
+                    class="forecastTempDay1"
+                    id="forecast-temp-day1">
+                    18º</span> 
+                    <span 
+                    class="forecastTempNight1"
+                    id="forecast-temp-night-1">
+                    12º
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <footer 
+    class="myInfo">
     open source code
-    <br />
-    <a 
-    class="meLink m-0 p-1" 
-    href="https://github.com/GwoonGwen">
+        <br />
+        <a 
+        class="meLink m-0 p-1" 
+        href="https://github.com/GwoonGwen">
         GwoonGwen
-    </a>
-</footer>
-<script 
+        </a>
+    </footer>
+<script
 src="src/app.js">
 </script>
 </body>

@@ -157,6 +157,43 @@ a {
 	right: 10px;
 }
 
+.forecast {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.forecastDay1 {
+	backdrop-filter: blur(1px);
+	color: rgb(2, 2, 53);
+	font-size: 19px;
+	line-height: 1.2;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
+}
+
+.forecasteEmo1 {
+	line-height: 1.2;
+	margin: 0 auto;
+}
+
+.forecastTempDay1 {
+	backdrop-filter: blur(1px);
+	color: rgb(2, 2, 53);
+	font-size: 17px;
+	line-height: 1.2;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
+}
+
+.forecastTempNight1 {
+	backdrop-filter: blur(1px);
+	color: rgb(158, 161, 9);
+	font-size: 15px;
+	line-height: 1.2;
+	text-shadow: 1px 1px 2px rgb(22, 21, 18), 0 0 1em rgb(149, 149, 235),
+		0 0 0.2em rgb(179, 180, 176);
+}
+
 .myInfo {
 	color: rgb(251, 249, 249);
 	font-size: 90%;
