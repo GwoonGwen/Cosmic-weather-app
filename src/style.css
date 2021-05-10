@@ -37,7 +37,7 @@ a {
 	margin: 1px auto;
 }
 
-.inputBar {
+.searchBar {
 	background-color: lightyellow;
 	border: thin;
 	border-radius: 200px;
@@ -48,7 +48,7 @@ a {
 	width: 120px;
 }
 
-.findButton {
+.searchButton {
 	font-size: 30px;
 	margin-top: 1px;
 	margin-bottom: 5px;
@@ -99,7 +99,6 @@ a {
 	color: rgb(2, 2, 53);
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
-	line-height: 1;
 	margin: 0 auto;
 	max-height: 100%;
 	position: relative;
@@ -154,7 +153,8 @@ a {
 }
 
 .forecast {
-	margin-top: 1px;
+	backdrop-filter: blur(1px);
+	margin-top: 20px;
 	padding: 1px, 1px, 1px, 1px;
 	text-align: center;
 	position: relative;
@@ -162,7 +162,6 @@ a {
 }
 
 .forecastDay {
-	backdrop-filter: blur(1px);
 	color: rgb(2, 2, 53);
 	font-size: 19px;
 	font-weight: 600;
@@ -172,13 +171,11 @@ a {
 }
 
 .forecastEmo {
-	backdrop-filter: blur(1px);
 	line-height: 0.1;
 	margin: 0 auto;
 }
 
 .forecastTempDay {
-	backdrop-filter: blur(1px);
 	color: rgb(2, 2, 53);
 	font-size: 17px;
 	line-height: 1.2;
@@ -187,7 +184,6 @@ a {
 }
 
 .forecastTempNight {
-	backdrop-filter: blur(2px);
 	color: rgb(212, 212, 202);
 	font-size: 14px;
 	line-height: 1.2;

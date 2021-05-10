@@ -29,6 +29,13 @@ let thisMonth = months[date.getMonth()];
 return `${today} ${dateNr} ${thisMonth}`;
 }
 
+function currentTime(time) {
+    let hour = time.getHours();
+    let minutes = time.getMinutes();
+
+    return `${hour}:${minutes}`;
+}
+
 function displayForecast() {
     let forecastElement = document.querySelector("#forecast");
     let forecastHTML = `<div class="row">`;
@@ -63,14 +70,6 @@ function displayForecast() {
     })
     forecastHTML = forecastHTML + `</div>`;
     forecastElement.innerHTML = forecastHTML;
-
-}
-
-function currentTime(time) {
-    let hour = time.getHours();
-    let minutes = time.getMinutes();
-
-    return `${hour}:${minutes}`;
 }
 
 function displayWeather(response) {
@@ -80,18 +79,17 @@ function displayWeather(response) {
     document.querySelector("#sky").innerHTML = response.data.weather[0].description;
     document.querySelector("#temp-main").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#icon-today").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-
     celsiusTemp = response.data.main.temp;
 }
 
 function cityUserInput(event) {
     event.preventDefault();
     let cityInput = document.querySelector("#search-bar").value.trim();
-    let apiKey = "bea03abc048987ac9ed7fb290ead5af5";
+    let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
     let units = "metric";
     let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
     let apiUrl = `${mainUrl}q=${cityInput}&appid=${apiKey}&units=${units}`;
-    axios.get(apiUrl).then(displayWeather)
+    axios.get(apiUrl).then(displayWeather);
 }
 
 function searchPosition(position) {
@@ -102,7 +100,7 @@ function searchPosition(position) {
     let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
     let apiUrl = `${mainUrl}lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
 
-    axios.get(apiUrl).then(displayWeather)
+    axios.get(apiUrl).then(displayWeather);
 }
 
 function pinpointCity(event) {
@@ -139,7 +137,7 @@ let pinpoint = document.querySelector("#pinpoint");
 pinpoint.addEventListener("click", pinpointCity);
 
 let cityInput = document.querySelector("#user-input");
-cityInput.addEventListener("submit", displayWeather);
+cityInput.addEventListener("submit", cityUserInput);
 
 let celsiusTemp = null;
 
