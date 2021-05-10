@@ -14,7 +14,7 @@ body {
 }
 
 a {
-	color: rgb(255, 246, 236);
+	color: rgb(54, 73, 247);
 	text-decoration: none;
 }
 
@@ -77,7 +77,7 @@ a {
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 	font-size: 15px;
-	line-height: 1;
+	line-height: 1.2;
 }
 
 .city {
@@ -87,11 +87,11 @@ a {
 	color: rgb(2, 2, 53);
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
-	font-size: 50px;
-	line-height: 1;
+	font-size: 40px;
+	line-height: 1.2;
 	max-height: 100%;
 	max-width: 100%;
-	margin: 10px auto;
+	margin: 0px auto;
 	padding-bottom: 5px;
 	text-transform: capitalize;
 	width: 350px;
@@ -106,14 +106,12 @@ a {
 	line-height: 1.2;
 	margin: 0 auto;
 	max-height: 100%;
-	padding: 1px;
 	position: relative;
 	right: 15px;
 }
 
 .tempMain {
 	font-size: 35px;
-	line-height: 1.2;
 }
 
 .iconToday {
