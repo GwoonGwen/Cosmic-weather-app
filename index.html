@@ -26,15 +26,15 @@
                 </button>
                 <input 
                 type="text" 
-                class="searchbar" 
-                Id="search-bar" 
-                placeholder="Look for a city.." 
+                class="inputBar" 
+                Id="input-bar"
+                placeholder="Find a city.." 
                 autofocus="on"
                 autocomplete="off">
                 <button 
                 type="submit" 
-                class="btn btn-transparant searchButton p-0" 
-                id="search-button">
+                class="btn btn-transparant findButton p-0" 
+                id="find-button">
                     👁
                 </button>
             </div>
@@ -97,32 +97,9 @@
             class="sky"
             id="sky"></li>
         </ul>
-        <div class="forecast">
-            <div class="row">
-                <div class="col-2">
-                    <div class="forecastDay1">
-                    Tue
-                    </div>
-                    <img class="forecasteEmo1"
-                    src="http://openweathermap.org/img/wn/04d@2x.png"
-                    alt=""
-                    width="60"
-                    />
-                    <div 
-                    class="forecastTemp" 
-                    id="forecast-temp">
-                    <span
-                    class="forecastTempDay1"
-                    id="forecast-temp-day1">
-                    18º</span> 
-                    <span 
-                    class="forecastTempNight1"
-                    id="forecast-temp-night-1">
-                    12º
-                    </span>
-                    </div>
-                </div>
-            </div>
+        <div 
+        class="forecast" 
+        id="forecast">
         </div>
     </div>  
     <footer 
