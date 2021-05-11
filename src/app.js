@@ -59,14 +59,14 @@ function displayForecast(response) {
     
     let forecastHTML = `<div class="row">`;
     forecast.forEach(function (forecastDay, index) {
-        if (index < 4) {
+        if (index < 6) {
             forecastHTML = forecastHTML +
                 `
                     <div class="col-2">
                     <div class="forecastDate">
                     ${formatDay(forecastDay.dt)}
                     </div>
-                    <img class="forecastEmo"
+                    <img class="forecastIcon"
                     src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                     alt=""
                     width="60"
@@ -139,27 +139,6 @@ function pinpointCity(event) {
     navigator.geolocation.getCurrentPosition(searchPosition);
 }
 
-function showFahrenheit(event) {
-    event.preventDefault();
-    let tempElement = document.querySelector("#temp-main");
-
-    celsiusLink.classList.remove("active");
-    fahnrenheitLink.classList.add("active");
-
-    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-    tempElement.innerHTML = Math.round (fahrenheitTemp);
-}
-
-function showCelsius(event) {
-    event.preventDefault();
-
-    celsiusLink.classList.add("active");
-    fahnrenheitLink.classList.remove("active");
-
-    let tempElement = document.querySelector("#temp-main");
-    tempElement.innerHTML = Math.round(celsiusTemp);
-}
-
 let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
@@ -171,9 +150,3 @@ let cityInput = document.querySelector("#user-input");
 cityInput.addEventListener("submit", cityUserInput);
 
 let celsiusTemp = null;
-
-let fahnrenheitLink = document.querySelector("#fahrenheit");
-fahnrenheitLink.addEventListener("click", showFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", showCelsius);

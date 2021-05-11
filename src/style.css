@@ -18,6 +18,9 @@ a {
 	text-decoration: none;
 }
 
+h2 {
+}
+
 .weatherApp {
 	display: center;
 	border-radius: 60%;
@@ -25,10 +28,10 @@ a {
 		url(https://cssanimation.rocks/images/random/earth.png);
 	box-shadow: 2px 5px 40px rgba(233, 184, 48, 0.699);
 	margin: 100px auto;
-	max-height: 500px;
-	max-width: 500px;
-	min-height: 500px;
-	min-width: 500px;
+	max-height: 600px;
+	max-width: 600px;
+	min-height: 600px;
+	min-width: 600px;
 	text-align: center;
 }
 
@@ -77,19 +80,19 @@ a {
 }
 
 .city {
-	border-radius: 50px;
+	border-radius: 45px;
 	backdrop-filter: blur(1px);
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(2, 2, 53);
-	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
-		0 0 0.2em rgb(240, 241, 161);
-	font-size: 35px;
+	font-size: 45px;
 	line-height: 1.2;
 	max-height: 100%;
 	max-width: 100%;
 	margin: 0px auto;
 	padding-bottom: 5px;
 	text-transform: capitalize;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
 	width: 350px;
 }
 
@@ -100,39 +103,27 @@ a {
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 	margin: 0 auto;
-	max-height: 100%;
-	position: relative;
-	right: 15px;
 }
 
 .tempMain {
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .iconToday {
-	backdrop-filter: blur(1px);
 	border-radius: 50px;
 	bottom: 10px;
-	left: 13px;
-	max-width: 35%;
+	filter: drop-shadow(0 0 1rem rgb(247, 243, 2));
+	left: 15px;
+	max-width: 50%;
 	position: relative;
 }
 
-.tempDetail {
+.celsius {
 	backdrop-filter: blur(1px);
 	bottom: 15px;
 	color: rgb(2, 2, 53);
-	font-size: 12px;
+	font-size: 20px;
 	position: relative;
-	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
-		0 0 0.2em rgb(240, 241, 161);
-}
-
-.tempDetail .active {
-	backdrop-filter: blur(1px);
-	color: rgb(2, 2, 53);
-	cursor: default;
-	font-size: 12px;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
@@ -142,24 +133,25 @@ a {
 	backdrop-filter: blur(1px);
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 800;
 	list-style: none;
-	line-height: 1.2;
-	margin: 10px auto;
+	line-height: 1;
+	margin: auto 0;
 	max-height: 100%;
-	max-width: 30%;
-	position: relative;
-	right: 10px;
+	max-width: 100%;
 }
 
 .forecast {
 	backdrop-filter: blur(1px);
+	border-radius: 100px;
+	box-shadow: inset 0 0 0.2rem 500px rgba(8, 8, 8, 0);
+	margin: 0 auto;
 	margin-top: 20px;
+	max-height: 60%;
+	max-width: 85%;
 	padding: 0px, 0px, 0px, 0px;
 	text-align: center;
-	position: relative;
-	left: 85px;
 }
 
 .forecastDate {
@@ -171,14 +163,16 @@ a {
 		0 0 0.2em rgb(240, 241, 161);
 }
 
-.forecastEmo {
+.forecastIcon {
+	filter: drop-shadow(0 1rem 0.6rem rgb(252, 250, 251));
 	line-height: 0.1;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .forecastTempMax {
 	color: rgb(2, 2, 53);
-	font-size: 17px;
+	font-size: 20px;
 	line-height: 1.2;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
@@ -186,7 +180,7 @@ a {
 
 .forecastTempMin {
 	color: rgb(212, 212, 202);
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.2;
 	position: relative;
 	bottom: 2px;
