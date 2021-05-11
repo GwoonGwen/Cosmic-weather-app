@@ -162,7 +162,7 @@ a {
 	left: 85px;
 }
 
-.forecastDay {
+.forecastDate {
 	color: rgb(2, 2, 53);
 	font-size: 19px;
 	font-weight: 600;
@@ -176,7 +176,7 @@ a {
 	margin: 0 auto;
 }
 
-.forecastTempDay {
+.forecastTempMax {
 	color: rgb(2, 2, 53);
 	font-size: 17px;
 	line-height: 1.2;
@@ -184,7 +184,7 @@ a {
 		0 0 0.2em rgb(240, 241, 161);
 }
 
-.forecastTempNight {
+.forecastTempMin {
 	color: rgb(212, 212, 202);
 	font-size: 14px;
 	line-height: 1.2;

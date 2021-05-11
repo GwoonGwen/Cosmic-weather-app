@@ -36,23 +36,38 @@ function currentTime(time) {
     return `${hour}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+    ];
+
+    return days[day];
+}
+
 function displayForecast(response) {
-    console.log(response.data.daily);
+    let forecast = response.data.daily;
 
     let forecastElement = document.querySelector("#forecast");
-
-    let days = ["Tue", "Wed", "Thu", "Fri"];
     
     let forecastHTML = `<div class="row">`;
-    days.forEach(function (day) {
-        forecastHTML = forecastHTML +
-            `
+    forecast.forEach(function (forecastDay, index) {
+        if (index < 4) {
+            forecastHTML = forecastHTML +
+                `
                     <div class="col-2">
-                    <div class="forecastDay">
-                    ${day}
+                    <div class="forecastDate">
+                    ${formatDay(forecastDay.dt)}
                     </div>
                     <img class="forecastEmo"
-                    src="http://openweathermap.org/img/wn/04d@2x.png"
+                    src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                     alt=""
                     width="60"
                     />
@@ -60,17 +75,18 @@ function displayForecast(response) {
                     class="forecastTemp" 
                     id="forecast-temp">
                     <span
-                    class="forecastTempDay"
-                    id="forecast-temp-day-max">
-                    18º</span> 
+                    class="forecastTempMax"
+                    id="forecast-temp-max">
+                    ${Math.round(forecastDay.temp.max)}º</span> 
                     <span 
-                    class="forecastTempNight"
-                    id="forecast-temp-night-min">
-                    12º
+                    class="forecastTempMin"
+                    id="forecast-temp-min">
+                    ${Math.round(forecastDay.temp.min)}º
                     </span>
                     </div>
                 </div>
             `;
+        }
     })
     forecastHTML = forecastHTML + `</div>`;
     forecastElement.innerHTML = forecastHTML;
