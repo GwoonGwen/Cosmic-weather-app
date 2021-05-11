@@ -143,6 +143,7 @@ a {
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 	font-size: 13px;
+	font-weight: 800;
 	list-style: none;
 	line-height: 1.2;
 	margin: 10px auto;
