@@ -1,5 +1,5 @@
 function currentDate(date) {
-    let days = [
+let days = [
         "Sun",
         "Mon",
         "Tue",
@@ -48,7 +48,6 @@ function formatDay(timestamp) {
         "Fri",
         "Sat"
     ];
-
     return days[day];
 }
 
@@ -99,7 +98,6 @@ function getForecast(coordinates) {
     axios.get(apiUrl).then(displayForecast);
 }
 
-
 function displayWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#humidity-value").innerHTML = Math.round(response.data.main.humidity);
@@ -110,17 +108,6 @@ function displayWeather(response) {
     celsiusTemp = response.data.main.temp;
 
     getForecast(response.data.coord);
-}
-
-function cityUserInput(event) {
-    event.preventDefault();
-    let cityInput = document.querySelector("#search-bar").value.trim();
-    let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
-    let units = "metric";
-    let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
-    let apiUrl = `${mainUrl}q=${cityInput}&appid=${apiKey}&units=${units}`;
-    
-    axios.get(apiUrl).then(displayWeather);
 }
 
 function searchPosition(position) {
@@ -139,6 +126,17 @@ function pinpointCity(event) {
     navigator.geolocation.getCurrentPosition(searchPosition);
 }
 
+function cityUserInput(event) {
+    event.preventDefault();
+    let cityInput = document.querySelector("#search-bar").value.trim();
+    let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
+    let units = "metric";
+    let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
+    let apiUrl = `${mainUrl}q=${cityInput}&appid=${apiKey}&units=${units}`;
+    
+    axios.get(apiUrl).then(displayWeather);
+}
+
 let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
@@ -150,3 +148,4 @@ let cityInput = document.querySelector("#user-input");
 cityInput.addEventListener("submit", cityUserInput);
 
 let celsiusTemp = null;
+
