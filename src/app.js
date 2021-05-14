@@ -133,9 +133,9 @@ let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
 
-cityUserInput("Amsterdam");
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let celsiusTemp = null;
+
+cityUserInput("Amsterdam");
