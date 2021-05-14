@@ -1,12 +1,12 @@
 function currentDate(date) {
 let days = [
-        "Sun",
-        "Mon",
-        "Tue",
-        "Wed",
-        "Thu",
-        "Fri",
-        "Sat"
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thusday",
+        "Friday",
+        "Saturday"
     ];
 
 let months = [
@@ -31,8 +31,13 @@ return `${today} ${dateNr} ${thisMonth}`;
 
 function currentTime(time) {
     let hour = time.getHours();
+    if (hour < 10) {
+        hour = `0${hour}`;
+    }
     let minutes = time.getMinutes();
-
+    if (minutes < 10) {
+        minutes = `0${minutes}`;
+    }
     return `${hour}:${minutes}`;
 }
 
@@ -105,47 +110,32 @@ function displayWeather(response) {
     document.querySelector("#sky").innerHTML = response.data.weather[0].description;
     document.querySelector("#temp-main").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#icon-today").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    celsiusTemp = response.data.main.temp;
 
     getForecast(response.data.coord);
 }
 
-function searchPosition(position) {
-    let lat = position.coords.latitude;
-    let lon = position.coords.longitude;
-    let apiKey = "bea03abc048987ac9ed7fb290ead5af5";
-    let units = "metric";
-    let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
-    let apiUrl = `${mainUrl}lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
-
-    axios.get(apiUrl).then(displayWeather);
-}
-
-function pinpointCity(event) {
-    event.preventDefault();
-    navigator.geolocation.getCurrentPosition(searchPosition);
-}
-
-function cityUserInput(event) {
-    event.preventDefault();
-    let cityInput = document.querySelector("#search-bar").value.trim();
+function cityUserInput(city) {
     let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
     let units = "metric";
     let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
-    let apiUrl = `${mainUrl}q=${cityInput}&appid=${apiKey}&units=${units}`;
+    let apiUrl = `${mainUrl}q=${city}&appid=${apiKey}&units=${units}`;
     
     axios.get(apiUrl).then(displayWeather);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInput = document.querySelector("#search-bar").value.trim();
+    cityUserInput(cityInput.value);
 }
 
 let now = new Date();
 let dateToday = document.querySelector("#date").innerHTML = currentDate(now);
 let timeToday = document.querySelector("#time").innerHTML = currentTime(now);
 
-let pinpoint = document.querySelector("#pinpoint");
-pinpoint.addEventListener("click", pinpointCity);
+cityUserInput("Amsterdam");
 
-let cityInput = document.querySelector("#user-input");
-cityInput.addEventListener("submit", cityUserInput);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 let celsiusTemp = null;
-
