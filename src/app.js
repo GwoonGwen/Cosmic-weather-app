@@ -59,14 +59,14 @@ function formatDay(timestamp) {
 function displayForecast(response) {
     let forecast = response.data.daily;
 
-    let forecastElement = document.querySelector("#forecast");
+    let forecastElement = document.querySelector("#forecast-wrap");
     
     let forecastHTML = `<div class="row">`;
     forecast.forEach(function (forecastDay, index) {
         if (index < 6) {
             forecastHTML = forecastHTML +
-                `
-                    <div class="col-2 forecastDay">
+                `   
+                    <div class="col-2">
                     <div class="forecastDate">
                     ${formatDay(forecastDay.dt)}
                     </div>
@@ -81,14 +81,15 @@ function displayForecast(response) {
                     <span
                     class="forecastTempMax"
                     id="forecast-temp-max">
-                    ${Math.round(forecastDay.temp.max)}º</span> 
+                    ${Math.round(forecastDay.temp.max)}º
+                    </span> 
                     <span 
                     class="forecastTempMin"
                     id="forecast-temp-min">
                     ${Math.round(forecastDay.temp.min)}º
                     </span>
                     </div>
-                </div>
+                    </div>
             `;
         }
     })
@@ -100,6 +101,7 @@ function getForecast(coordinates) {
     let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=${units}`;
+    
     axios.get(apiUrl).then(displayForecast);
 }
 
@@ -115,7 +117,7 @@ function displayWeather(response) {
 }
 
 function cityUserInput(city) {
-    let apiKey = "b6ea7199b1cb9aca54197fcbaab59e85";
+    let apiKey = "bea03abc048987ac9ed7fb290ead5af5";
     let units = "metric";
     let mainUrl = "https://api.openweathermap.org/data/2.5/weather?";
     let apiUrl = `${mainUrl}q=${city}&appid=${apiKey}&units=${units}`;
@@ -125,8 +127,8 @@ function cityUserInput(city) {
 
 function handleSubmit(event) {
     event.preventDefault();
-    let cityInput = document.querySelector("#search-bar").value.trim();
-    cityUserInput(cityInput.value);
+    let cityInput = document.querySelector("#search-bar");
+    cityUserInput(cityInput.value.trim());
 }
 
 let now = new Date();

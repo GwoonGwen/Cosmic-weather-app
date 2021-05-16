@@ -76,6 +76,7 @@ li:first-letter {
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(2, 2, 53);
 	font-size: 45px;
+	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
 	line-height: 0.9;
 	max-height: 100%;
 	max-width: 100%;
@@ -92,22 +93,23 @@ li:first-letter {
 	backdrop-filter: blur(1.2px);
 	color: rgb(2, 2, 53);
 	height: 50px;
-	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
-		0 0 0.2em rgb(240, 241, 161);
 	margin: 0 auto;
 	padding: 0rem;
-	width: 150px;
+	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
+		0 0 0.2em rgb(240, 241, 161);
+	width: 170px;
 }
 
 .tempMain {
-	font-size: 40px;
+	font-size: 43px;
+	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(98, 112, 97));
 	position: relative;
 	right: 7px;
 }
 
 .iconToday {
 	bottom: 8px;
-	filter: drop-shadow(0 0 1rem rgb(252, 250, 251));
+	filter: drop-shadow(0 0 1rem rgb(98, 112, 97));
 	height: 160%;
 	left: 5px;
 	position: relative;
@@ -116,6 +118,7 @@ li:first-letter {
 .celsius {
 	bottom: 15px;
 	color: rgb(2, 2, 53);
+	filter: drop-shadow(0 0 1rem rgb(98, 112, 97));
 	font-size: 20px;
 	position: relative;
 	right: 10px;
@@ -124,8 +127,8 @@ li:first-letter {
 }
 
 .cityDetails {
-	border-radius: 50px;
 	backdrop-filter: blur(1.2px);
+	border-radius: 50px;
 	color: rgb(244, 240, 228);
 	font-size: 14px;
 	font-weight: 800;
@@ -139,34 +142,37 @@ li:first-letter {
 }
 
 .forecast {
-	backdrop-filter: blur(1.1px);
-	border-radius: 50px;
-	box-shadow: inset 0 0 0.2rem 500px rgba(8, 8, 8, 0);
-	line-height: 0.5;
+	font-weight: 800;
 	margin: 70px auto;
-	width: 75%;
+	width: 80%;
 }
 
-.forecastDay {
-	padding: 0rem;
+.forecastWrap {
+	backdrop-filter: blur(1.1px);
+	border-radius: 50px;
+	box-shadow: inset 0 0 1rem 500px rgba(8, 8, 8, 0);
+	font-weight: 800;
+	line-height: 0.3;
 	margin: 0 auto;
+	padding: 0rem;
 }
 
 .forecastDate {
 	color: rgb(2, 2, 53);
-	font-size: 25px;
-	font-weight: 600;
+	font-size: 26px;
+	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
 
 .forecastIcon {
-	filter: drop-shadow(0 1rem 0.6rem rgb(252, 250, 251));
-	width: 80%;
+	filter: drop-shadow(0.1rem 0.7rem 0.7rem rgb(252, 250, 251));
+	width: 90%;
 }
 
 .forecastTempMax {
 	color: rgb(2, 2, 53);
+	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
 	font-size: 27px;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
@@ -175,6 +181,7 @@ li:first-letter {
 .forecastTempMin {
 	bottom: 7px;
 	color: rgb(212, 212, 202);
+	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
 	font-size: 15px;
 	position: relative;
 	text-shadow: 1px 1px 2px rgb(22, 21, 18), 0 0 1em rgb(5, 5, 134),
