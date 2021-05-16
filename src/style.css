@@ -4,7 +4,6 @@ body {
 	background-image: url(https://cssanimation.rocks/images/random/space2.jpg);
 	font-family: "Open Sans", sans-serif;
 	height: 100%;
-	line-height: 1.2;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -12,9 +11,6 @@ body {
 a {
 	color: rgb(54, 73, 247);
 	text-decoration: none;
-}
-
-h2 {
 }
 
 li:first-letter {
@@ -31,7 +27,6 @@ li:first-letter {
 	max-width: 650px;
 	min-height: 650px;
 	min-width: 650px;
-	padding: 1em;
 	text-align: center;
 }
 
@@ -85,7 +80,7 @@ li:first-letter {
 	max-height: 100%;
 	max-width: 100%;
 	margin: 0 auto;
-	padding-bottom: 5px;
+	padding-bottom: 0rem;
 	text-transform: capitalize;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
@@ -94,82 +89,85 @@ li:first-letter {
 
 .tempToday {
 	border-radius: 50px;
-	backdrop-filter: blur(1.5px);
+	backdrop-filter: blur(1.2px);
 	color: rgb(2, 2, 53);
+	height: 50px;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 	margin: 0 auto;
-	width: 200px;
-	height: 50px;
+	padding: 0rem;
+	width: 150px;
 }
 
 .tempMain {
 	font-size: 40px;
+	position: relative;
+	right: 7px;
 }
 
 .iconToday {
-	border-radius: 50px;
-	bottom: 10px;
-	filter: drop-shadow(0 1rem 0.6rem rgb(252, 250, 251));
-	left: 15px;
-	max-width: 50%;
+	bottom: 8px;
+	filter: drop-shadow(0 0 1rem rgb(252, 250, 251));
+	height: 160%;
+	left: 5px;
 	position: relative;
 }
 
 .celsius {
-	backdrop-filter: blur(1px);
 	bottom: 15px;
 	color: rgb(2, 2, 53);
 	font-size: 20px;
 	position: relative;
+	right: 10px;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
 
 .cityDetails {
 	border-radius: 50px;
-	backdrop-filter: blur(1px);
+	backdrop-filter: blur(1.2px);
 	color: rgb(244, 240, 228);
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 800;
 	list-style: none;
-	line-height: 1;
+	line-height: 1.1;
 	margin: 0 auto;
-	max-height: 100%;
-	max-width: 100%;
+	padding: 0rem;
+	position: relative;
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
+	width: 150px;
 }
 
 .forecast {
-	backdrop-filter: blur(1px);
-	border-radius: 100px;
+	backdrop-filter: blur(1.1px);
+	border-radius: 50px;
 	box-shadow: inset 0 0 0.2rem 500px rgba(8, 8, 8, 0);
-	margin: 40px auto;
-	max-height: 60%;
-	max-width: 85%;
+	line-height: 0.5;
+	margin: 70px auto;
+	width: 75%;
+}
+
+.forecastDay {
+	padding: 0rem;
+	margin: 0 auto;
 }
 
 .forecastDate {
 	color: rgb(2, 2, 53);
 	font-size: 25px;
 	font-weight: 600;
-	line-height: 0.8;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
 
 .forecastIcon {
 	filter: drop-shadow(0 1rem 0.6rem rgb(252, 250, 251));
-	line-height: 0.1;
-	margin: 0 auto;
-	width: 100%;
-	height: 80px;
+	width: 80%;
 }
 
 .forecastTempMax {
 	color: rgb(2, 2, 53);
-	font-size: 25px;
-	line-height: 1.2;
+	font-size: 27px;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
@@ -178,7 +176,6 @@ li:first-letter {
 	bottom: 7px;
 	color: rgb(212, 212, 202);
 	font-size: 15px;
-	line-height: 1.2;
 	position: relative;
 	text-shadow: 1px 1px 2px rgb(22, 21, 18), 0 0 1em rgb(5, 5, 134),
 		0 0 0.2em rgb(35, 45, 2);
