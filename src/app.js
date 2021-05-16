@@ -75,18 +75,18 @@ function displayForecast(response) {
                     alt=""
                     width="60"
                     />
-                    <div 
+                    <div
                     class="forecastTemp" 
                     id="forecast-temp">
                     <span
                     class="forecastTempMax"
                     id="forecast-temp-max">
-                    ${Math.round(forecastDay.temp.max)}º
+                    ${Math.round(forecastDay.temp.max)}
                     </span> 
                     <span 
                     class="forecastTempMin"
                     id="forecast-temp-min">
-                    ${Math.round(forecastDay.temp.min)}º
+                    ${Math.round(forecastDay.temp.min)}
                     </span>
                     </div>
                     </div>
@@ -140,4 +140,4 @@ form.addEventListener("submit", handleSubmit);
 
 let celsiusTemp = null;
 
-cityUserInput("Waddinxveen");
+cityUserInput("waddinxveen");

@@ -3,14 +3,15 @@ body {
 	background-size: cover;
 	background-image: url(https://cssanimation.rocks/images/random/space2.jpg);
 	font-family: "Open Sans", sans-serif;
-	height: 100%;
-	margin: 0 auto;
-	width: 100%;
 }
 
 a {
 	color: rgb(54, 73, 247);
 	text-decoration: none;
+}
+
+h2 {
+	font-weight: 500;
 }
 
 li:first-letter {
@@ -20,7 +21,7 @@ li:first-letter {
 .weatherApp {
 	background: center / contain no-repeat
 		url(https://cssanimation.rocks/images/random/earth.png);
-	box-shadow: 2px 5px 40px rgba(233, 184, 48, 0.699);
+	box-shadow: 2px 5px 60px rgba(233, 184, 48, 0.699);
 	border-radius: 60%;
 	margin: 100px auto;
 	max-height: 650px;
@@ -35,29 +36,28 @@ li:first-letter {
 	border: thin;
 	border-radius: 200px;
 	height: 20px;
-	margin-bottom: 25px;
 	margin-top: 30px;
-	margin-left: 30px;
+	margin-left: 28px;
 	text-align: center;
-	width: 120px;
+	width: 20%;
 }
 
 .searchButton {
 	font-size: 25px;
+	line-height: 1;
 	margin-top: 1px;
 	margin-bottom: 5px;
-	line-height: 1;
 }
 
 .today {
-	border-radius: 100px;
 	backdrop-filter: blur(1px);
+	border-radius: 100px;
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(244, 240, 228);
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 1.2;
-	margin: 10px auto;
+	margin: 20px auto;
 	max-height: 50%;
 	max-width: 30%;
 }
@@ -71,38 +71,34 @@ li:first-letter {
 }
 
 .city {
-	border-radius: 45px;
 	backdrop-filter: blur(1px);
+	border-radius: 45px;
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
-	color: rgb(2, 2, 53);
-	font-size: 45px;
+	color: rgb(0, 0, 0);
 	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
+	font-size: 45px;
 	line-height: 0.9;
-	max-height: 100%;
-	max-width: 100%;
 	margin: 0 auto;
-	padding-bottom: 0rem;
-	text-transform: capitalize;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
+	text-transform: capitalize;
 	width: 350px;
 }
 
 .tempToday {
 	border-radius: 50px;
 	backdrop-filter: blur(1.2px);
-	color: rgb(2, 2, 53);
-	height: 50px;
+	color: rgb(0, 0, 0);
+	height: 80px;
 	margin: 0 auto;
-	padding: 0rem;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
-	width: 170px;
+	width: 200px;
 }
 
 .tempMain {
-	font-size: 43px;
-	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(98, 112, 97));
+	filter: drop-shadow(0rem 0.2rem 1rem rgb(240, 125, 11));
+	font-size: 40px;
 	position: relative;
 	right: 7px;
 }
@@ -110,15 +106,14 @@ li:first-letter {
 .iconToday {
 	bottom: 8px;
 	filter: drop-shadow(0 0 1rem rgb(98, 112, 97));
-	height: 160%;
-	left: 5px;
+	left: 10px;
 	position: relative;
 }
 
 .celsius {
 	bottom: 15px;
-	color: rgb(2, 2, 53);
-	filter: drop-shadow(0 0 1rem rgb(98, 112, 97));
+	color: rgb(0, 0, 0);
+	filter: drop-shadow(0 0 1rem rgb(76, 74, 74));
 	font-size: 20px;
 	position: relative;
 	right: 10px;
@@ -130,58 +125,53 @@ li:first-letter {
 	backdrop-filter: blur(1.2px);
 	border-radius: 50px;
 	color: rgb(244, 240, 228);
-	font-size: 14px;
+	filter: drop-shadow(0.1rem 0.2rem 0.8rem rgb(0, 0, 0));
+	font-size: 15px;
 	font-weight: 800;
-	list-style: none;
 	line-height: 1.1;
+	list-style: none;
 	margin: 0 auto;
 	padding: 0rem;
-	position: relative;
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 	width: 150px;
 }
 
 .forecast {
-	font-weight: 800;
-	margin: 70px auto;
-	width: 80%;
+	font-weight: 900;
+	margin: 55px auto;
+	width: 87%;
 }
 
 .forecastWrap {
-	backdrop-filter: blur(1.1px);
+	backdrop-filter: blur(1.2px);
 	border-radius: 50px;
-	box-shadow: inset 0 0 1rem 500px rgba(8, 8, 8, 0);
-	font-weight: 800;
 	line-height: 0.3;
-	margin: 0 auto;
-	padding: 0rem;
 }
 
 .forecastDate {
-	color: rgb(2, 2, 53);
-	font-size: 26px;
-	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
+	color: rgb(0, 0, 0);
+	font-size: 27px;
+	filter: drop-shadow(0.5rem 0.5rem 0.9rem rgb(240, 125, 11));
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
 
 .forecastIcon {
-	filter: drop-shadow(0.1rem 0.7rem 0.7rem rgb(252, 250, 251));
-	width: 90%;
+	filter: drop-shadow(5px 5px 8px rgb(252, 250, 251));
 }
 
 .forecastTempMax {
-	color: rgb(2, 2, 53);
-	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
-	font-size: 27px;
+	color: rgb(0, 0, 0);
+	filter: drop-shadow(0rem 0.2rem 1rem rgb(240, 125, 11));
+	font-size: 30px;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
 
 .forecastTempMin {
-	bottom: 7px;
+	bottom: 9px;
 	color: rgb(212, 212, 202);
-	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(240, 125, 11));
+	filter: drop-shadow(0.1rem 0.2rem 0.4rem rgb(0, 0, 0));
 	font-size: 15px;
 	position: relative;
 	text-shadow: 1px 1px 2px rgb(22, 21, 18), 0 0 1em rgb(5, 5, 134),
@@ -204,6 +194,6 @@ li:first-letter {
 
 .meLink:hover {
 	color: rgb(247, 240, 99);
-	text-shadow: 1px 1px 2px rgb(8, 8, 8), 0 0 1em rgb(182, 178, 246),
+	text-shadow: 1px 1px 20px rgb(8, 8, 8), 0 0 1em rgb(182, 178, 246),
 		0 0 0.2em rgb(250, 217, 244);
 }
