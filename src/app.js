@@ -138,4 +138,4 @@ form.addEventListener("submit", handleSubmit);
 
 let celsiusTemp = null;
 
-cityUserInput("Amsterdam");
+cityUserInput("Waddinxveen");

@@ -62,7 +62,7 @@ li:first-letter {
 	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 	font-weight: 600;
 	line-height: 1.2;
-	margin: 0 auto;
+	margin: 10px auto;
 	max-height: 50%;
 	max-width: 30%;
 }
@@ -81,10 +81,10 @@ li:first-letter {
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0);
 	color: rgb(2, 2, 53);
 	font-size: 45px;
-	line-height: 1.2;
+	line-height: 0.9;
 	max-height: 100%;
 	max-width: 100%;
-	margin: 0px auto;
+	margin: 0 auto;
 	padding-bottom: 5px;
 	text-transform: capitalize;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
@@ -94,15 +94,17 @@ li:first-letter {
 
 .tempToday {
 	border-radius: 50px;
-	backdrop-filter: blur(1px);
+	backdrop-filter: blur(1.5px);
 	color: rgb(2, 2, 53);
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 	margin: 0 auto;
+	width: 200px;
+	height: 50px;
 }
 
 .tempMain {
-	font-size: 35px;
+	font-size: 40px;
 }
 
 .iconToday {
@@ -128,32 +130,28 @@ li:first-letter {
 	border-radius: 50px;
 	backdrop-filter: blur(1px);
 	color: rgb(244, 240, 228);
-	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 	font-size: 15px;
 	font-weight: 800;
 	list-style: none;
 	line-height: 1;
-	margin: auto 0;
+	margin: 0 auto;
 	max-height: 100%;
 	max-width: 100%;
+	text-shadow: 1px 1px 2px rgb(33, 0, 181), 0 0 1em black, 0 0 0.2em black;
 }
 
 .forecast {
 	backdrop-filter: blur(1px);
 	border-radius: 100px;
 	box-shadow: inset 0 0 0.2rem 500px rgba(8, 8, 8, 0);
-	margin: 0 auto;
-	margin-top: 20px;
+	margin: 40px auto;
 	max-height: 60%;
 	max-width: 85%;
-	padding: 0px, 0px, 0px, 0px;
-	text-align: center;
-	white-space: nowrap;
 }
 
 .forecastDate {
 	color: rgb(2, 2, 53);
-	font-size: 19px;
+	font-size: 25px;
 	font-weight: 600;
 	line-height: 0.8;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
@@ -164,23 +162,24 @@ li:first-letter {
 	filter: drop-shadow(0 1rem 0.6rem rgb(252, 250, 251));
 	line-height: 0.1;
 	margin: 0 auto;
-	width: 95%;
+	width: 100%;
+	height: 80px;
 }
 
 .forecastTempMax {
 	color: rgb(2, 2, 53);
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1.2;
 	text-shadow: 1px 1px 2px gold, 0 0 1em rgb(187, 187, 243),
 		0 0 0.2em rgb(240, 241, 161);
 }
 
 .forecastTempMin {
+	bottom: 7px;
 	color: rgb(212, 212, 202);
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.2;
 	position: relative;
-	bottom: 2px;
 	text-shadow: 1px 1px 2px rgb(22, 21, 18), 0 0 1em rgb(5, 5, 134),
 		0 0 0.2em rgb(35, 45, 2);
 }
@@ -188,15 +187,14 @@ li:first-letter {
 .myInfo {
 	color: rgb(251, 249, 249);
 	font-size: 90%;
-	margin-top: 200px;
 	text-align: center;
 }
 
 .meLink {
 	color: rgb(254, 253, 149);
+	font-family: monospace;
 	text-shadow: 1px 1px 2px rgb(212, 0, 255), 0 0 1em rgb(67, 229, 18),
 		0 0 0.2em blue;
-	font-family: monospace;
 	text-decoration: none;
 }
 
