@@ -10,10 +10,6 @@ a {
 	text-decoration: none;
 }
 
-h2 {
-	font-weight: 500;
-}
-
 li:first-letter {
 	text-transform: capitalize;
 }
